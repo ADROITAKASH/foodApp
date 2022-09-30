@@ -1,3 +1,4 @@
+import MealItemForm from './MealItemForm';
 import styles from './MealItem.module.css';
 
 const MealItem = ({ meal }) => {
@@ -8,7 +9,7 @@ const MealItem = ({ meal }) => {
             <div className={styles.price}>{meal.price}</div>
         </div>
         <div>
-
+            <MealItemForm id={meal.id} />
         </div>
     </li >)
 }
